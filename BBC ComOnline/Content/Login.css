@@ -1,0 +1,19 @@
+﻿body {
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.form {
+    width: 450px;
+}
