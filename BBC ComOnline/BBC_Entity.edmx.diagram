@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f0dbba2ade3944afa3d6b4290287c1d1" Name="Diagram1" ZoomLevel="75" ShowGrid="false" SnapToGrid="true" >
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Articulo" Width="1.5" PointX="6.625" PointY="7.75" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Proveedor" Width="1.5" PointX="11.25" PointY="7.125" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Empresa" Width="1.5" PointX="4" PointY="4.125" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Articulo_Proveedor" Width="1.5" PointX="9" PointY="7.75" />
+        <AssociationConnector Association="BBC_ComOnlineModel.ArticuloArticulo_Proveedor" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Empresa_Articulo" Width="1.5" PointX="7.375" PointY="3.375" />
+        <AssociationConnector Association="BBC_ComOnlineModel.EmpresaEmpresa_Articulo" />
+        <AssociationConnector Association="BBC_ComOnlineModel.ArticuloEmpresa_Articulo" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Usuario" Width="1.5" PointX="3.5" PointY="0.75" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Personal" Width="1.5" PointX="7.5" PointY="0.625" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Categoria" Width="1.5" PointX="10.25" PointY="3.375" />
+        <AssociationConnector Association="BBC_ComOnlineModel.CategoriaEmpresa_Articulo" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Cargo" Width="1.5" PointX="10" PointY="0.5" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Usuario_Personal" Width="1.5" PointX="5.5" PointY="0.75" />
+        <AssociationConnector Association="BBC_ComOnlineModel.PersonalUsuario_Personal" />
+        <AssociationConnector Association="BBC_ComOnlineModel.CargoPersonal" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Modulo" Width="1.5" PointX="14.375" PointY="0.625" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Cargo_Modulo" Width="1.5" PointX="12.25" PointY="0.625" IsExpanded="true" />
+        <AssociationConnector Association="BBC_ComOnlineModel.CargoCargo_Modulo" />
+        <AssociationConnector Association="BBC_ComOnlineModel.ModuloCargo_Modulo" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Unidad_Medida" Width="1.5" PointX="10.25" PointY="5.375" />
+        <AssociationConnector Association="BBC_ComOnlineModel.Unidad_MedidaEmpresa_Articulo" />
+        <AssociationConnector Association="BBC_ComOnlineModel.ProveedorArticulo_Proveedor" />
+        <AssociationConnector Association="BBC_ComOnlineModel.EmpresaUsuario" />
+        <AssociationConnector Association="BBC_ComOnlineModel.UsuarioUsuario_Personal" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Venta" Width="1.5" PointX="1.625" PointY="7.125" />
+        <AssociationConnector Association="BBC_ComOnlineModel.VentaEmpresa" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Detalle_Venta" Width="1.5" PointX="4.125" PointY="7.875" />
+        <AssociationConnector Association="BBC_ComOnlineModel.VentaDetalle_Venta" />
+        <AssociationConnector Association="BBC_ComOnlineModel.ArticuloDetalle_Venta" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Detalle_Carro" Width="1.5" PointX="1" PointY="4" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Carro_Compra" Width="1.5" PointX="1.125" PointY="0.75" />
+        <AssociationConnector Association="BBC_ComOnlineModel.UsuarioCarro_Compra" />
+        <AssociationConnector Association="BBC_ComOnlineModel.Carro_CompraDetalle_Carro" />
+        <AssociationConnector Association="BBC_ComOnlineModel.ArticuloDetalle_Carro" />
+        <EntityTypeShape EntityType="BBC_ComOnlineModel.Caja" Width="1.5" PointX="5.625" PointY="2.75" />
+        <AssociationConnector Association="BBC_ComOnlineModel.UsuarioCaja" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

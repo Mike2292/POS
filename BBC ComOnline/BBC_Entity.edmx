@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BBC_ComOnlineModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BBC_ComOnlineModelStoreContainer">
+    <EntitySet Name="Articuloes" EntityType="BBC_ComOnlineModel.Store.Articuloes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Proveedors" EntityType="BBC_ComOnlineModel.Store.Proveedors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Empresas" EntityType="BBC_ComOnlineModel.Store.Empresas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Articulo_Proveedor" EntityType="BBC_ComOnlineModel.Store.Articulo_Proveedor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Empresa_Articulo" EntityType="BBC_ComOnlineModel.Store.Empresa_Articulo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuarios" EntityType="BBC_ComOnlineModel.Store.Usuarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personals" EntityType="BBC_ComOnlineModel.Store.Personals" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Categorias" EntityType="BBC_ComOnlineModel.Store.Categorias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cargoes" EntityType="BBC_ComOnlineModel.Store.Cargoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuario_Personal" EntityType="BBC_ComOnlineModel.Store.Usuario_Personal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Moduloes" EntityType="BBC_ComOnlineModel.Store.Moduloes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cargo_Modulo" EntityType="BBC_ComOnlineModel.Store.Cargo_Modulo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Unidad_Medida" EntityType="BBC_ComOnlineModel.Store.Unidad_Medida" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VentaSet" EntityType="BBC_ComOnlineModel.Store.VentaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Detalle_VentaSet" EntityType="BBC_ComOnlineModel.Store.Detalle_VentaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Detalle_CarroSet" EntityType="BBC_ComOnlineModel.Store.Detalle_CarroSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Carro_CompraSet" EntityType="BBC_ComOnlineModel.Store.Carro_CompraSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CajaSet" EntityType="BBC_ComOnlineModel.Store.CajaSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ArticuloArticulo_Proveedor" Association="BBC_ComOnlineModel.Store.ArticuloArticulo_Proveedor">
+      <End Role="Articulo" EntitySet="Articuloes" />
+      <End Role="Articulo_Proveedor" EntitySet="Articulo_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaEmpresa_Articulo" Association="BBC_ComOnlineModel.Store.EmpresaEmpresa_Articulo">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloEmpresa_Articulo" Association="BBC_ComOnlineModel.Store.ArticuloEmpresa_Articulo">
+      <End Role="Articulo" EntitySet="Articuloes" />
+      <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+    </AssociationSet>
+    <AssociationSet Name="CategoriaEmpresa_Articulo" Association="BBC_ComOnlineModel.Store.CategoriaEmpresa_Articulo">
+      <End Role="Categoria" EntitySet="Categorias" />
+      <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+    </AssociationSet>
+    <AssociationSet Name="PersonalUsuario_Personal" Association="BBC_ComOnlineModel.Store.PersonalUsuario_Personal">
+      <End Role="Personal" EntitySet="Personals" />
+      <End Role="Usuario_Personal" EntitySet="Usuario_Personal" />
+    </AssociationSet>
+    <AssociationSet Name="CargoPersonal" Association="BBC_ComOnlineModel.Store.CargoPersonal">
+      <End Role="Cargo" EntitySet="Cargoes" />
+      <End Role="Personal" EntitySet="Personals" />
+    </AssociationSet>
+    <AssociationSet Name="CargoCargo_Modulo" Association="BBC_ComOnlineModel.Store.CargoCargo_Modulo">
+      <End Role="Cargo" EntitySet="Cargoes" />
+      <End Role="Cargo_Modulo" EntitySet="Cargo_Modulo" />
+    </AssociationSet>
+    <AssociationSet Name="ModuloCargo_Modulo" Association="BBC_ComOnlineModel.Store.ModuloCargo_Modulo">
+      <End Role="Modulo" EntitySet="Moduloes" />
+      <End Role="Cargo_Modulo" EntitySet="Cargo_Modulo" />
+    </AssociationSet>
+    <AssociationSet Name="Unidad_MedidaEmpresa_Articulo" Association="BBC_ComOnlineModel.Store.Unidad_MedidaEmpresa_Articulo">
+      <End Role="Unidad_Medida" EntitySet="Unidad_Medida" />
+      <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+    </AssociationSet>
+    <AssociationSet Name="ProveedorArticulo_Proveedor" Association="BBC_ComOnlineModel.Store.ProveedorArticulo_Proveedor">
+      <End Role="Proveedor" EntitySet="Proveedors" />
+      <End Role="Articulo_Proveedor" EntitySet="Articulo_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaUsuario" Association="BBC_ComOnlineModel.Store.EmpresaUsuario">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioUsuario_Personal" Association="BBC_ComOnlineModel.Store.UsuarioUsuario_Personal">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Usuario_Personal" EntitySet="Usuario_Personal" />
+    </AssociationSet>
+    <AssociationSet Name="VentaEmpresa" Association="BBC_ComOnlineModel.Store.VentaEmpresa">
+      <End Role="Venta" EntitySet="VentaSet" />
+      <End Role="Empresa" EntitySet="Empresas" />
+    </AssociationSet>
+    <AssociationSet Name="VentaDetalle_Venta" Association="BBC_ComOnlineModel.Store.VentaDetalle_Venta">
+      <End Role="Venta" EntitySet="VentaSet" />
+      <End Role="Detalle_Venta" EntitySet="Detalle_VentaSet" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloDetalle_Venta" Association="BBC_ComOnlineModel.Store.ArticuloDetalle_Venta">
+      <End Role="Articulo" EntitySet="Articuloes" />
+      <End Role="Detalle_Venta" EntitySet="Detalle_VentaSet" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioCarro_Compra" Association="BBC_ComOnlineModel.Store.UsuarioCarro_Compra">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Carro_Compra" EntitySet="Carro_CompraSet" />
+    </AssociationSet>
+    <AssociationSet Name="Carro_CompraDetalle_Carro" Association="BBC_ComOnlineModel.Store.Carro_CompraDetalle_Carro">
+      <End Role="Carro_Compra" EntitySet="Carro_CompraSet" />
+      <End Role="Detalle_Carro" EntitySet="Detalle_CarroSet" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloDetalle_Carro" Association="BBC_ComOnlineModel.Store.ArticuloDetalle_Carro">
+      <End Role="Articulo" EntitySet="Articuloes" />
+      <End Role="Detalle_Carro" EntitySet="Detalle_CarroSet" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioCaja" Association="BBC_ComOnlineModel.Store.UsuarioCaja">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Caja" EntitySet="CajaSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Articuloes">
+    <Key>
+      <PropertyRef Name="EAN" />
+    </Key>
+    <Property Name="EAN" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Descripcion" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Proveedors">
+    <Key>
+      <PropertyRef Name="Rut" />
+    </Key>
+    <Property Name="Rut" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="RazonSocial" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Rubro" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Direccion" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Telefono" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="Correo" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Empresas">
+    <Key>
+      <PropertyRef Name="Rut" />
+    </Key>
+    <Property Name="Rut" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="RazonSocial" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Rubro" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Direccion" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Telefono" Type="nvarchar" Nullable="false" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="Articulo_Proveedor">
+    <Key>
+      <PropertyRef Name="EAN_ID" />
+      <PropertyRef Name="ProveedorRut" />
+    </Key>
+    <Property Name="EAN_ID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ProveedorRut" Type="nvarchar" Nullable="false" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="Empresa_Articulo">
+    <Key>
+      <PropertyRef Name="EmpresaRut" />
+      <PropertyRef Name="EAN_ID" />
+    </Key>
+    <Property Name="EmpresaRut" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="EAN_ID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Codigo_Interno" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="Unidad_MedidaId" Type="int" Nullable="true" />
+    <Property Name="CategoriaId" Type="int" Nullable="true" />
+    <Property Name="Precio_Publico" Type="decimal" Nullable="false" />
+    <Property Name="Precio_Costo" Type="decimal" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Nullable="false" />
+    <Property Name="Fecha_Compra" Type="datetime" Nullable="true" />
+    <Property Name="IVA" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Correo" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Clave" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="EmpresaRut" Type="nvarchar" Nullable="false" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="Personals">
+    <Key>
+      <PropertyRef Name="Rut" />
+    </Key>
+    <Property Name="Rut" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Apellido" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Genero" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CargoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Cargoes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Usuario_Personal">
+    <Key>
+      <PropertyRef Name="PersonalRut" />
+      <PropertyRef Name="UsuarioId" />
+    </Key>
+    <Property Name="UsuarioId" Type="int" Nullable="false" />
+    <Property Name="PersonalRut" Type="nvarchar" Nullable="false" MaxLength="11" />
+    <Property Name="Personal_Rut" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="Usuario_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Moduloes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Cargo_Modulo">
+    <Key>
+      <PropertyRef Name="CargoId" />
+      <PropertyRef Name="ModuloId" />
+    </Key>
+    <Property Name="CargoId" Type="int" Nullable="false" />
+    <Property Name="ModuloId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Unidad_Medida">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="VentaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" StoreGeneratedPattern="Identity" Nullable="false" MaxLength="100" />
+    <Property Name="NumeroOrden" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="FechaVenta" Type="datetime" Nullable="false" />
+    <Property Name="MetodoPago" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Total" Type="decimal" Nullable="false" />
+    <Property Name="Empresa_Rut" Type="nvarchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Detalle_VentaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="VentaId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ArticuloEAN" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="PrecioUnitario" Type="decimal" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Nullable="false" />
+    <Property Name="SubTotal" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Detalle_CarroSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Carro_CompraId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ArticuloEAN" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Descripcion_Producto" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Precio" Type="decimal" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Nullable="false" />
+    <Property Name="SubTotal" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Carro_CompraSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UsuarioId" Type="int" Nullable="false" />
+    <Property Name="Total" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CajaSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UsuarioId" Type="int" Nullable="false" />
+    <Property Name="FechaApertura" Type="datetime" Nullable="false" />
+    <Property Name="FechaCierre" Type="datetime" Nullable="false" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="MontoInicial" Type="decimal" Nullable="false" />
+    <Property Name="Total" Type="decimal" Nullable="false" />
+  </EntityType>
+  <Association Name="ArticuloArticulo_Proveedor">
+    <End Role="Articulo" Type="BBC_ComOnlineModel.Store.Articuloes" Multiplicity="1" />
+    <End Role="Articulo_Proveedor" Type="BBC_ComOnlineModel.Store.Articulo_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="Articulo_Proveedor">
+        <PropertyRef Name="EAN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaEmpresa_Articulo">
+    <End Role="Empresa" Type="BBC_ComOnlineModel.Store.Empresas" Multiplicity="1" />
+    <End Role="Empresa_Articulo" Type="BBC_ComOnlineModel.Store.Empresa_Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Empresa_Articulo">
+        <PropertyRef Name="EmpresaRut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloEmpresa_Articulo">
+    <End Role="Articulo" Type="BBC_ComOnlineModel.Store.Articuloes" Multiplicity="1" />
+    <End Role="Empresa_Articulo" Type="BBC_ComOnlineModel.Store.Empresa_Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="Empresa_Articulo">
+        <PropertyRef Name="EAN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CategoriaEmpresa_Articulo">
+    <End Role="Categoria" Type="BBC_ComOnlineModel.Store.Categorias" Multiplicity="0..1" />
+    <End Role="Empresa_Articulo" Type="BBC_ComOnlineModel.Store.Empresa_Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empresa_Articulo">
+        <PropertyRef Name="CategoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PersonalUsuario_Personal">
+    <End Role="Personal" Type="BBC_ComOnlineModel.Store.Personals" Multiplicity="1" />
+    <End Role="Usuario_Personal" Type="BBC_ComOnlineModel.Store.Usuario_Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Usuario_Personal">
+        <PropertyRef Name="Personal_Rut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CargoPersonal">
+    <End Role="Cargo" Type="BBC_ComOnlineModel.Store.Cargoes" Multiplicity="1" />
+    <End Role="Personal" Type="BBC_ComOnlineModel.Store.Personals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Personal">
+        <PropertyRef Name="CargoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CargoCargo_Modulo">
+    <End Role="Cargo" Type="BBC_ComOnlineModel.Store.Cargoes" Multiplicity="1" />
+    <End Role="Cargo_Modulo" Type="BBC_ComOnlineModel.Store.Cargo_Modulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cargo_Modulo">
+        <PropertyRef Name="CargoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ModuloCargo_Modulo">
+    <End Role="Modulo" Type="BBC_ComOnlineModel.Store.Moduloes" Multiplicity="1" />
+    <End Role="Cargo_Modulo" Type="BBC_ComOnlineModel.Store.Cargo_Modulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cargo_Modulo">
+        <PropertyRef Name="ModuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Unidad_MedidaEmpresa_Articulo">
+    <End Role="Unidad_Medida" Type="BBC_ComOnlineModel.Store.Unidad_Medida" Multiplicity="0..1" />
+    <End Role="Empresa_Articulo" Type="BBC_ComOnlineModel.Store.Empresa_Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unidad_Medida">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empresa_Articulo">
+        <PropertyRef Name="Unidad_MedidaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProveedorArticulo_Proveedor">
+    <End Role="Proveedor" Type="BBC_ComOnlineModel.Store.Proveedors" Multiplicity="1" />
+    <End Role="Articulo_Proveedor" Type="BBC_ComOnlineModel.Store.Articulo_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Articulo_Proveedor">
+        <PropertyRef Name="ProveedorRut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaUsuario">
+    <End Role="Empresa" Type="BBC_ComOnlineModel.Store.Empresas" Multiplicity="1" />
+    <End Role="Usuario" Type="BBC_ComOnlineModel.Store.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="EmpresaRut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioUsuario_Personal">
+    <End Role="Usuario" Type="BBC_ComOnlineModel.Store.Usuarios" Multiplicity="1" />
+    <End Role="Usuario_Personal" Type="BBC_ComOnlineModel.Store.Usuario_Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario_Personal">
+        <PropertyRef Name="Usuario_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VentaEmpresa">
+    <End Role="Venta" Type="BBC_ComOnlineModel.Store.VentaSet" Multiplicity="*" />
+    <End Role="Empresa" Type="BBC_ComOnlineModel.Store.Empresas" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Venta">
+        <PropertyRef Name="Empresa_Rut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VentaDetalle_Venta">
+    <End Role="Venta" Type="BBC_ComOnlineModel.Store.VentaSet" Multiplicity="1" />
+    <End Role="Detalle_Venta" Type="BBC_ComOnlineModel.Store.Detalle_VentaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Detalle_Venta">
+        <PropertyRef Name="VentaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloDetalle_Venta">
+    <End Role="Articulo" Type="BBC_ComOnlineModel.Store.Articuloes" Multiplicity="1" />
+    <End Role="Detalle_Venta" Type="BBC_ComOnlineModel.Store.Detalle_VentaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="Detalle_Venta">
+        <PropertyRef Name="ArticuloEAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioCarro_Compra">
+    <End Role="Usuario" Type="BBC_ComOnlineModel.Store.Usuarios" Multiplicity="1" />
+    <End Role="Carro_Compra" Type="BBC_ComOnlineModel.Store.Carro_CompraSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carro_Compra">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Carro_CompraDetalle_Carro">
+    <End Role="Carro_Compra" Type="BBC_ComOnlineModel.Store.Carro_CompraSet" Multiplicity="1" />
+    <End Role="Detalle_Carro" Type="BBC_ComOnlineModel.Store.Detalle_CarroSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carro_Compra">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Detalle_Carro">
+        <PropertyRef Name="Carro_CompraId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloDetalle_Carro">
+    <End Role="Articulo" Type="BBC_ComOnlineModel.Store.Articuloes" Multiplicity="1" />
+    <End Role="Detalle_Carro" Type="BBC_ComOnlineModel.Store.Detalle_CarroSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="EAN" />
+      </Principal>
+      <Dependent Role="Detalle_Carro">
+        <PropertyRef Name="ArticuloEAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioCaja">
+    <End Role="Usuario" Type="BBC_ComOnlineModel.Store.Usuarios" Multiplicity="1" />
+    <End Role="Caja" Type="BBC_ComOnlineModel.Store.CajaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Caja">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BBC_ComOnlineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BBC_ComOnlineEntities1" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Articuloes" EntityType="BBC_ComOnlineModel.Articulo" />
+          <EntitySet Name="Proveedors" EntityType="BBC_ComOnlineModel.Proveedor" />
+          <EntitySet Name="Empresas" EntityType="BBC_ComOnlineModel.Empresa" />
+          <EntitySet Name="Articulo_Proveedor" EntityType="BBC_ComOnlineModel.Articulo_Proveedor" />
+          <AssociationSet Name="ArticuloArticulo_Proveedor" Association="BBC_ComOnlineModel.ArticuloArticulo_Proveedor">
+            <End Role="Articulo" EntitySet="Articuloes" />
+            <End Role="Articulo_Proveedor" EntitySet="Articulo_Proveedor" />
+          </AssociationSet>
+          <EntitySet Name="Empresa_Articulo" EntityType="BBC_ComOnlineModel.Empresa_Articulo" />
+          <AssociationSet Name="EmpresaEmpresa_Articulo" Association="BBC_ComOnlineModel.EmpresaEmpresa_Articulo">
+            <End Role="Empresa" EntitySet="Empresas" />
+            <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+          </AssociationSet>
+          <AssociationSet Name="ArticuloEmpresa_Articulo" Association="BBC_ComOnlineModel.ArticuloEmpresa_Articulo">
+            <End Role="Articulo" EntitySet="Articuloes" />
+            <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+          </AssociationSet>
+          <EntitySet Name="Usuarios" EntityType="BBC_ComOnlineModel.Usuario" />
+          <EntitySet Name="Personals" EntityType="BBC_ComOnlineModel.Personal" />
+          <EntitySet Name="Categorias" EntityType="BBC_ComOnlineModel.Categoria" />
+          <AssociationSet Name="CategoriaEmpresa_Articulo" Association="BBC_ComOnlineModel.CategoriaEmpresa_Articulo">
+            <End Role="Categoria" EntitySet="Categorias" />
+            <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+          </AssociationSet>
+          <EntitySet Name="Cargoes" EntityType="BBC_ComOnlineModel.Cargo" />
+          <EntitySet Name="Usuario_Personal" EntityType="BBC_ComOnlineModel.Usuario_Personal" />
+          <AssociationSet Name="PersonalUsuario_Personal" Association="BBC_ComOnlineModel.PersonalUsuario_Personal">
+            <End Role="Personal" EntitySet="Personals" />
+            <End Role="Usuario_Personal" EntitySet="Usuario_Personal" />
+          </AssociationSet>
+          <AssociationSet Name="CargoPersonal" Association="BBC_ComOnlineModel.CargoPersonal">
+            <End Role="Cargo" EntitySet="Cargoes" />
+            <End Role="Personal" EntitySet="Personals" />
+          </AssociationSet>
+          <EntitySet Name="Moduloes" EntityType="BBC_ComOnlineModel.Modulo" />
+          <EntitySet Name="Cargo_Modulo" EntityType="BBC_ComOnlineModel.Cargo_Modulo" />
+          <AssociationSet Name="CargoCargo_Modulo" Association="BBC_ComOnlineModel.CargoCargo_Modulo">
+            <End Role="Cargo" EntitySet="Cargoes" />
+            <End Role="Cargo_Modulo" EntitySet="Cargo_Modulo" />
+          </AssociationSet>
+          <AssociationSet Name="ModuloCargo_Modulo" Association="BBC_ComOnlineModel.ModuloCargo_Modulo">
+            <End Role="Modulo" EntitySet="Moduloes" />
+            <End Role="Cargo_Modulo" EntitySet="Cargo_Modulo" />
+          </AssociationSet>
+          <EntitySet Name="Unidad_Medida" EntityType="BBC_ComOnlineModel.Unidad_Medida" />
+          <AssociationSet Name="Unidad_MedidaEmpresa_Articulo" Association="BBC_ComOnlineModel.Unidad_MedidaEmpresa_Articulo">
+            <End Role="Unidad_Medida" EntitySet="Unidad_Medida" />
+            <End Role="Empresa_Articulo" EntitySet="Empresa_Articulo" />
+          </AssociationSet>
+          <AssociationSet Name="ProveedorArticulo_Proveedor" Association="BBC_ComOnlineModel.ProveedorArticulo_Proveedor">
+            <End Role="Proveedor" EntitySet="Proveedors" />
+            <End Role="Articulo_Proveedor" EntitySet="Articulo_Proveedor" />
+          </AssociationSet>
+          <AssociationSet Name="EmpresaUsuario" Association="BBC_ComOnlineModel.EmpresaUsuario">
+            <End Role="Empresa" EntitySet="Empresas" />
+            <End Role="Usuario" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="UsuarioUsuario_Personal" Association="BBC_ComOnlineModel.UsuarioUsuario_Personal">
+            <End Role="Usuario" EntitySet="Usuarios" />
+            <End Role="Usuario_Personal" EntitySet="Usuario_Personal" />
+          </AssociationSet>
+          <EntitySet Name="VentaSet" EntityType="BBC_ComOnlineModel.Venta" />
+          <AssociationSet Name="VentaEmpresa" Association="BBC_ComOnlineModel.VentaEmpresa">
+            <End Role="Venta" EntitySet="VentaSet" />
+            <End Role="Empresa" EntitySet="Empresas" />
+          </AssociationSet>
+          <EntitySet Name="Detalle_VentaSet" EntityType="BBC_ComOnlineModel.Detalle_Venta" />
+          <AssociationSet Name="VentaDetalle_Venta" Association="BBC_ComOnlineModel.VentaDetalle_Venta">
+            <End Role="Venta" EntitySet="VentaSet" />
+            <End Role="Detalle_Venta" EntitySet="Detalle_VentaSet" />
+          </AssociationSet>
+          <AssociationSet Name="ArticuloDetalle_Venta" Association="BBC_ComOnlineModel.ArticuloDetalle_Venta">
+            <End Role="Articulo" EntitySet="Articuloes" />
+            <End Role="Detalle_Venta" EntitySet="Detalle_VentaSet" />
+          </AssociationSet>
+          <EntitySet Name="Detalle_CarroSet" EntityType="BBC_ComOnlineModel.Detalle_Carro" />
+          <EntitySet Name="Carro_CompraSet" EntityType="BBC_ComOnlineModel.Carro_Compra" />
+          <AssociationSet Name="UsuarioCarro_Compra" Association="BBC_ComOnlineModel.UsuarioCarro_Compra">
+            <End Role="Usuario" EntitySet="Usuarios" />
+            <End Role="Carro_Compra" EntitySet="Carro_CompraSet" />
+          </AssociationSet>
+          <AssociationSet Name="Carro_CompraDetalle_Carro" Association="BBC_ComOnlineModel.Carro_CompraDetalle_Carro">
+            <End Role="Carro_Compra" EntitySet="Carro_CompraSet" />
+            <End Role="Detalle_Carro" EntitySet="Detalle_CarroSet" />
+          </AssociationSet>
+          <AssociationSet Name="ArticuloDetalle_Carro" Association="BBC_ComOnlineModel.ArticuloDetalle_Carro">
+            <End Role="Articulo" EntitySet="Articuloes" />
+            <End Role="Detalle_Carro" EntitySet="Detalle_CarroSet" />
+          </AssociationSet>
+          <EntitySet Name="CajaSet" EntityType="BBC_ComOnlineModel.Caja" />
+          <AssociationSet Name="UsuarioCaja" Association="BBC_ComOnlineModel.UsuarioCaja">
+            <End Role="Usuario" EntitySet="Usuarios" />
+            <End Role="Caja" EntitySet="CajaSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Articulo">
+          <Key>
+            <PropertyRef Name="EAN" />
+          </Key>
+          <Property Name="EAN" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Articulo_Proveedor" Relationship="BBC_ComOnlineModel.ArticuloArticulo_Proveedor" FromRole="Articulo" ToRole="Articulo_Proveedor" />
+          <NavigationProperty Name="Empresa_Articulo" Relationship="BBC_ComOnlineModel.ArticuloEmpresa_Articulo" FromRole="Articulo" ToRole="Empresa_Articulo" />
+          <Property Name="Estado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Detalle_Venta" Relationship="BBC_ComOnlineModel.ArticuloDetalle_Venta" FromRole="Articulo" ToRole="Detalle_Venta" />
+          <NavigationProperty Name="Detalle_Carro" Relationship="BBC_ComOnlineModel.ArticuloDetalle_Carro" FromRole="Articulo" ToRole="Detalle_Carro" />
+        </EntityType>
+        <EntityType Name="Proveedor">
+          <Key>
+            <PropertyRef Name="Rut" />
+          </Key>
+          <Property Name="Rut" Type="String" Nullable="false" MaxLength="11" />
+          <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Rubro" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Direccion" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="Telefono" Type="String" Nullable="false" MaxLength="12" />
+          <Property Name="Correo" Type="String" Nullable="false" MaxLength="100" />
+          <NavigationProperty Name="Articulo_Proveedor" Relationship="BBC_ComOnlineModel.ProveedorArticulo_Proveedor" FromRole="Proveedor" ToRole="Articulo_Proveedor" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Rut" />
+          </Key>
+          <Property Name="Rut" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="11" />
+          <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Rubro" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Direccion" Type="String" Nullable="false" MaxLength="100" />
+          <NavigationProperty Name="Empresa_Articulo" Relationship="BBC_ComOnlineModel.EmpresaEmpresa_Articulo" FromRole="Empresa" ToRole="Empresa_Articulo" />
+          <Property Name="Telefono" Type="String" Nullable="false" MaxLength="12" />
+          <NavigationProperty Name="Usuario" Relationship="BBC_ComOnlineModel.EmpresaUsuario" FromRole="Empresa" ToRole="Usuario" />
+          <NavigationProperty Name="Venta" Relationship="BBC_ComOnlineModel.VentaEmpresa" FromRole="Empresa" ToRole="Venta" />
+        </EntityType>
+        <EntityType Name="Articulo_Proveedor">
+          <Key>
+            <PropertyRef Name="EAN_ID" />
+            <PropertyRef Name="ProveedorRut" />
+          </Key>
+          <NavigationProperty Name="Articulo" Relationship="BBC_ComOnlineModel.ArticuloArticulo_Proveedor" FromRole="Articulo_Proveedor" ToRole="Articulo" />
+          <Property Name="EAN_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" ConcurrencyMode="Fixed" />
+          <NavigationProperty Name="Proveedor" Relationship="BBC_ComOnlineModel.ProveedorArticulo_Proveedor" FromRole="Articulo_Proveedor" ToRole="Proveedor" />
+          <Property Name="ProveedorRut" Type="String" Nullable="false" MaxLength="11" />
+        </EntityType>
+        <Association Name="ArticuloArticulo_Proveedor">
+          <End Type="BBC_ComOnlineModel.Articulo" Role="Articulo" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Articulo_Proveedor" Role="Articulo_Proveedor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articulo">
+              <PropertyRef Name="EAN" />
+            </Principal>
+            <Dependent Role="Articulo_Proveedor">
+              <PropertyRef Name="EAN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Empresa_Articulo">
+          <Key>
+            <PropertyRef Name="EmpresaRut" />
+            <PropertyRef Name="EAN_ID" />
+          </Key>
+          <NavigationProperty Name="Empresa" Relationship="BBC_ComOnlineModel.EmpresaEmpresa_Articulo" FromRole="Empresa_Articulo" ToRole="Empresa" />
+          <Property Name="EmpresaRut" Type="String" Nullable="false" ConcurrencyMode="Fixed" MaxLength="11" />
+          <NavigationProperty Name="Articulo" Relationship="BBC_ComOnlineModel.ArticuloEmpresa_Articulo" FromRole="Empresa_Articulo" ToRole="Articulo" />
+          <Property Name="EAN_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" ConcurrencyMode="None" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Codigo_Interno" Type="String" MaxLength="20" />
+          <Property Name="Unidad_MedidaId" Type="Int32" />
+          <Property Name="CategoriaId" Type="Int32" />
+          <Property Name="Precio_Publico" Type="Decimal" Nullable="false" />
+          <Property Name="Precio_Costo" Type="Decimal" Nullable="false" />
+          <Property Name="Cantidad" Type="Decimal" Nullable="false" />
+          <Property Name="Fecha_Compra" Type="DateTime" Nullable="true" />
+          <NavigationProperty Name="Categoria" Relationship="BBC_ComOnlineModel.CategoriaEmpresa_Articulo" FromRole="Empresa_Articulo" ToRole="Categoria" />
+          <NavigationProperty Name="Unidad_Medida" Relationship="BBC_ComOnlineModel.Unidad_MedidaEmpresa_Articulo" FromRole="Empresa_Articulo" ToRole="Unidad_Medida" />
+          <Property Name="IVA" Type="Decimal" Nullable="false" />
+        </EntityType>
+        <Association Name="EmpresaEmpresa_Articulo">
+          <End Type="BBC_ComOnlineModel.Empresa" Role="Empresa" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Empresa_Articulo" Role="Empresa_Articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Rut" />
+            </Principal>
+            <Dependent Role="Empresa_Articulo">
+              <PropertyRef Name="EmpresaRut" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ArticuloEmpresa_Articulo">
+          <End Type="BBC_ComOnlineModel.Articulo" Role="Articulo" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Empresa_Articulo" Role="Empresa_Articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articulo">
+              <PropertyRef Name="EAN" />
+            </Principal>
+            <Dependent Role="Empresa_Articulo">
+              <PropertyRef Name="EAN_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Correo" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="Clave" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="Estado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Empresa" Relationship="BBC_ComOnlineModel.EmpresaUsuario" FromRole="Usuario" ToRole="Empresa" />
+          <Property Name="EmpresaRut" Type="String" Nullable="false" MaxLength="11" />
+          <NavigationProperty Name="Usuario_Personal" Relationship="BBC_ComOnlineModel.UsuarioUsuario_Personal" FromRole="Usuario" ToRole="Usuario_Personal" />
+          <NavigationProperty Name="Carro_Compra" Relationship="BBC_ComOnlineModel.UsuarioCarro_Compra" FromRole="Usuario" ToRole="Carro_Compra" />
+          <NavigationProperty Name="Caja" Relationship="BBC_ComOnlineModel.UsuarioCaja" FromRole="Usuario" ToRole="Caja" />
+        </EntityType>
+        <EntityType Name="Personal">
+          <Key>
+            <PropertyRef Name="Rut" />
+          </Key>
+          <Property Name="Rut" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="11" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Apellido" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="Genero" Type="String" Nullable="false" MaxLength="50" />
+          <NavigationProperty Name="Usuario_Personal" Relationship="BBC_ComOnlineModel.PersonalUsuario_Personal" FromRole="Personal" ToRole="Usuario_Personal" />
+          <NavigationProperty Name="Cargo" Relationship="BBC_ComOnlineModel.CargoPersonal" FromRole="Personal" ToRole="Cargo" />
+          <Property Name="CargoId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Categoria">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" />
+          <NavigationProperty Name="Empresa_Articulo" Relationship="BBC_ComOnlineModel.CategoriaEmpresa_Articulo" FromRole="Categoria" ToRole="Empresa_Articulo" />
+        </EntityType>
+        <Association Name="CategoriaEmpresa_Articulo">
+          <End Type="BBC_ComOnlineModel.Categoria" Role="Categoria" Multiplicity="0..1" />
+          <End Type="BBC_ComOnlineModel.Empresa_Articulo" Role="Empresa_Articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Empresa_Articulo">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Cargo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Personals" Relationship="BBC_ComOnlineModel.CargoPersonal" FromRole="Cargo" ToRole="Personal" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="Cargo_Modulo" Relationship="BBC_ComOnlineModel.CargoCargo_Modulo" FromRole="Cargo" ToRole="Cargo_Modulo" />
+        </EntityType>
+        <EntityType Name="Usuario_Personal">
+          <Key>
+            <PropertyRef Name="PersonalRut" />
+            <PropertyRef Name="UsuarioId" />
+          </Key>
+          <NavigationProperty Name="Personal" Relationship="BBC_ComOnlineModel.PersonalUsuario_Personal" FromRole="Usuario_Personal" ToRole="Personal" />
+          <Property Name="UsuarioId" Type="Int32" Nullable="false" />
+          <Property Name="PersonalRut" Type="String" Nullable="false" MaxLength="11" />
+          <NavigationProperty Name="Usuario" Relationship="BBC_ComOnlineModel.UsuarioUsuario_Personal" FromRole="Usuario_Personal" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="PersonalUsuario_Personal">
+          <End Type="BBC_ComOnlineModel.Personal" Role="Personal" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Usuario_Personal" Role="Usuario_Personal" Multiplicity="*" />
+        </Association>
+        <Association Name="CargoPersonal">
+          <End Type="BBC_ComOnlineModel.Cargo" Role="Cargo" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Personal" Role="Personal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cargo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Personal">
+              <PropertyRef Name="CargoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Modulo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Cargo_Modulo" Relationship="BBC_ComOnlineModel.ModuloCargo_Modulo" FromRole="Modulo" ToRole="Cargo_Modulo" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Cargo_Modulo">
+          <Key>
+            <PropertyRef Name="CargoId" />
+            <PropertyRef Name="ModuloId" />
+          </Key>
+          <NavigationProperty Name="Cargo" Relationship="BBC_ComOnlineModel.CargoCargo_Modulo" FromRole="Cargo_Modulo" ToRole="Cargo" />
+          <Property Name="CargoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Modulo" Relationship="BBC_ComOnlineModel.ModuloCargo_Modulo" FromRole="Cargo_Modulo" ToRole="Modulo" />
+          <Property Name="ModuloId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="CargoCargo_Modulo">
+          <End Type="BBC_ComOnlineModel.Cargo" Role="Cargo" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Cargo_Modulo" Role="Cargo_Modulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cargo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cargo_Modulo">
+              <PropertyRef Name="CargoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ModuloCargo_Modulo">
+          <End Type="BBC_ComOnlineModel.Modulo" Role="Modulo" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Cargo_Modulo" Role="Cargo_Modulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modulo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Cargo_Modulo">
+              <PropertyRef Name="ModuloId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Unidad_Medida">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="20" />
+          <NavigationProperty Name="Empresa_Articulo" Relationship="BBC_ComOnlineModel.Unidad_MedidaEmpresa_Articulo" FromRole="Unidad_Medida" ToRole="Empresa_Articulo" />
+        </EntityType>
+        <Association Name="Unidad_MedidaEmpresa_Articulo">
+          <End Type="BBC_ComOnlineModel.Unidad_Medida" Role="Unidad_Medida" Multiplicity="0..1" />
+          <End Type="BBC_ComOnlineModel.Empresa_Articulo" Role="Empresa_Articulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Unidad_Medida">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Empresa_Articulo">
+              <PropertyRef Name="Unidad_MedidaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProveedorArticulo_Proveedor">
+          <End Type="BBC_ComOnlineModel.Proveedor" Role="Proveedor" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Articulo_Proveedor" Role="Articulo_Proveedor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedor">
+              <PropertyRef Name="Rut" />
+            </Principal>
+            <Dependent Role="Articulo_Proveedor">
+              <PropertyRef Name="ProveedorRut" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EmpresaUsuario">
+          <End Type="BBC_ComOnlineModel.Empresa" Role="Empresa" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Usuario" Role="Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Rut" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="EmpresaRut" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="UsuarioUsuario_Personal">
+          <End Type="BBC_ComOnlineModel.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Usuario_Personal" Role="Usuario_Personal" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Venta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" annotation:StoreGeneratedPattern="Identity" MaxLength="100" />
+          <Property Name="NumeroOrden" Type="String" Nullable="true" />
+          <Property Name="FechaVenta" Type="DateTime" Nullable="false" />
+          <Property Name="MetodoPago" Type="String" Nullable="false" />
+          <Property Name="Total" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="Empresa" Relationship="BBC_ComOnlineModel.VentaEmpresa" FromRole="Venta" ToRole="Empresa" />
+          <NavigationProperty Name="Detalle_Venta" Relationship="BBC_ComOnlineModel.VentaDetalle_Venta" FromRole="Venta" ToRole="Detalle_Venta" />
+        </EntityType>
+        <Association Name="VentaEmpresa">
+          <End Type="BBC_ComOnlineModel.Venta" Role="Venta" Multiplicity="*" />
+          <End Type="BBC_ComOnlineModel.Empresa" Role="Empresa" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Detalle_Venta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="100" />
+          <NavigationProperty Name="Venta" Relationship="BBC_ComOnlineModel.VentaDetalle_Venta" FromRole="Detalle_Venta" ToRole="Venta" />
+          <Property Name="VentaId" Type="String" Nullable="false" MaxLength="100" />
+          <NavigationProperty Name="Articulo" Relationship="BBC_ComOnlineModel.ArticuloDetalle_Venta" FromRole="Detalle_Venta" ToRole="Articulo" />
+          <Property Name="ArticuloEAN" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PrecioUnitario" Type="Decimal" Nullable="false" />
+          <Property Name="Cantidad" Type="Decimal" Nullable="false" />
+          <Property Name="SubTotal" Type="Decimal" Nullable="false" />
+        </EntityType>
+        <Association Name="VentaDetalle_Venta">
+          <End Type="BBC_ComOnlineModel.Venta" Role="Venta" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Detalle_Venta" Role="Detalle_Venta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Venta">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Detalle_Venta">
+              <PropertyRef Name="VentaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ArticuloDetalle_Venta">
+          <End Type="BBC_ComOnlineModel.Articulo" Role="Articulo" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Detalle_Venta" Role="Detalle_Venta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articulo">
+              <PropertyRef Name="EAN" />
+            </Principal>
+            <Dependent Role="Detalle_Venta">
+              <PropertyRef Name="ArticuloEAN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Detalle_Carro" >
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="50" />
+          <Property Name="Carro_CompraId" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="ArticuloEAN" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion_Producto" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="Precio" Type="Decimal" Nullable="false" />
+          <Property Name="Cantidad" Type="Decimal" Nullable="false" />
+          <Property Name="SubTotal" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="Carro_Compra" Relationship="BBC_ComOnlineModel.Carro_CompraDetalle_Carro" FromRole="Detalle_Carro" ToRole="Carro_Compra" />
+          <NavigationProperty Name="Articulo" Relationship="BBC_ComOnlineModel.ArticuloDetalle_Carro" FromRole="Detalle_Carro" ToRole="Articulo" />
+        </EntityType>
+        <EntityType Name="Carro_Compra">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="50" />
+          <NavigationProperty Name="Usuario" Relationship="BBC_ComOnlineModel.UsuarioCarro_Compra" FromRole="Carro_Compra" ToRole="Usuario" />
+          <Property Name="UsuarioId" Type="Int32" Nullable="false" />
+          <Property Name="Total" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="Detalle_Carro" Relationship="BBC_ComOnlineModel.Carro_CompraDetalle_Carro" FromRole="Carro_Compra" ToRole="Detalle_Carro" />
+        </EntityType>
+        <Association Name="UsuarioCarro_Compra">
+          <End Type="BBC_ComOnlineModel.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Carro_Compra" Role="Carro_Compra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carro_Compra">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Carro_CompraDetalle_Carro">
+          <End Type="BBC_ComOnlineModel.Carro_Compra" Role="Carro_Compra" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Detalle_Carro" Role="Detalle_Carro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Carro_Compra">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Detalle_Carro">
+              <PropertyRef Name="Carro_CompraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ArticuloDetalle_Carro">
+          <End Type="BBC_ComOnlineModel.Articulo" Role="Articulo" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Detalle_Carro" Role="Detalle_Carro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Articulo">
+              <PropertyRef Name="EAN" />
+            </Principal>
+            <Dependent Role="Detalle_Carro">
+              <PropertyRef Name="ArticuloEAN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Caja">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" MaxLength="50" />
+          <Property Name="UsuarioId" Type="Int32" Nullable="false" />
+          <Property Name="FechaApertura" Type="DateTime" Nullable="false" />
+          <Property Name="FechaCierre" Type="DateTime" Nullable="false" />
+          <Property Name="Estado" Type="Boolean" Nullable="false" />
+          <Property Name="MontoInicial" Type="Decimal" Nullable="false" />
+          <Property Name="Total" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="Usuario" Relationship="BBC_ComOnlineModel.UsuarioCaja" FromRole="Caja" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="UsuarioCaja">
+          <End Type="BBC_ComOnlineModel.Usuario" Role="Usuario" Multiplicity="1" />
+          <End Type="BBC_ComOnlineModel.Caja" Role="Caja" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Caja">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BBC_ComOnlineModelStoreContainer" CdmEntityContainer="BBC_ComOnlineEntities1">
+    <EntitySetMapping Name="Articuloes">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Articulo)">
+        <MappingFragment StoreEntitySet="Articuloes">
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedors">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Proveedor)">
+        <MappingFragment StoreEntitySet="Proveedors">
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rubro" ColumnName="Rubro" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresas">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Empresa)">
+        <MappingFragment StoreEntitySet="Empresas">
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rubro" ColumnName="Rubro" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articulo_Proveedor">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Articulo_Proveedor)">
+        <MappingFragment StoreEntitySet="Articulo_Proveedor">
+          <ScalarProperty Name="EAN_ID" ColumnName="EAN_ID" />
+          <ScalarProperty Name="ProveedorRut" ColumnName="ProveedorRut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa_Articulo">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Empresa_Articulo)">
+        <MappingFragment StoreEntitySet="Empresa_Articulo">
+          <ScalarProperty Name="EmpresaRut" ColumnName="EmpresaRut" />
+          <ScalarProperty Name="EAN_ID" ColumnName="EAN_ID" />
+          <ScalarProperty Name="Codigo_Interno" ColumnName="Codigo_Interno" />
+          <ScalarProperty Name="Unidad_MedidaId" ColumnName="Unidad_MedidaId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+          <ScalarProperty Name="Precio_Publico" ColumnName="Precio_Publico" />
+          <ScalarProperty Name="Precio_Costo" ColumnName="Precio_Costo" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Usuario)">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="EmpresaRut" ColumnName="EmpresaRut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personals">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Personal)">
+        <MappingFragment StoreEntitySet="Personals">
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="CargoId" ColumnName="CargoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Categoria)">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargoes">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Cargo)">
+        <MappingFragment StoreEntitySet="Cargoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario_Personal">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Usuario_Personal)">
+        <MappingFragment StoreEntitySet="Usuario_Personal">
+          <ScalarProperty Name="PersonalRut" ColumnName="PersonalRut" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Moduloes">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Modulo)">
+        <MappingFragment StoreEntitySet="Moduloes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargo_Modulo">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Cargo_Modulo)">
+        <MappingFragment StoreEntitySet="Cargo_Modulo">
+          <ScalarProperty Name="CargoId" ColumnName="CargoId" />
+          <ScalarProperty Name="ModuloId" ColumnName="ModuloId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unidad_Medida">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Unidad_Medida)">
+        <MappingFragment StoreEntitySet="Unidad_Medida">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VentaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Venta)">
+        <MappingFragment StoreEntitySet="VentaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroOrden" ColumnName="NumeroOrden" />
+          <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+          <ScalarProperty Name="MetodoPago" ColumnName="MetodoPago" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_VentaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Detalle_Venta)">
+        <MappingFragment StoreEntitySet="Detalle_VentaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VentaId" ColumnName="VentaId" />
+          <ScalarProperty Name="ArticuloEAN" ColumnName="ArticuloEAN" />
+          <ScalarProperty Name="PrecioUnitario" ColumnName="PrecioUnitario" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_CarroSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Detalle_Carro)">
+        <MappingFragment StoreEntitySet="Detalle_CarroSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Carro_CompraId" ColumnName="Carro_CompraId" />
+          <ScalarProperty Name="ArticuloEAN" ColumnName="ArticuloEAN" />
+          <ScalarProperty Name="Descripcion_Producto" ColumnName="Descripcion_Producto" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carro_CompraSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Carro_Compra)">
+        <MappingFragment StoreEntitySet="Carro_CompraSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CajaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Caja)">
+        <MappingFragment StoreEntitySet="CajaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+          <ScalarProperty Name="FechaApertura" ColumnName="FechaApertura" />
+          <ScalarProperty Name="FechaCierre" ColumnName="FechaCierre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="MontoInicial" ColumnName="MontoInicial" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PersonalUsuario_Personal" TypeName="BBC_ComOnlineModel.PersonalUsuario_Personal" StoreEntitySet="Usuario_Personal">
+      <EndProperty Name="Personal">
+        <ScalarProperty Name="Rut" ColumnName="Personal_Rut" />
+      </EndProperty>
+      <EndProperty Name="Usuario_Personal">
+        <ScalarProperty Name="PersonalRut" ColumnName="PersonalRut" />
+        <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UsuarioUsuario_Personal" TypeName="BBC_ComOnlineModel.UsuarioUsuario_Personal" StoreEntitySet="Usuario_Personal">
+      <EndProperty Name="Usuario">
+        <ScalarProperty Name="Id" ColumnName="Usuario_Id" />
+      </EndProperty>
+      <EndProperty Name="Usuario_Personal">
+        <ScalarProperty Name="PersonalRut" ColumnName="PersonalRut" />
+        <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VentaEmpresa" TypeName="BBC_ComOnlineModel.VentaEmpresa" StoreEntitySet="VentaSet">
+      <EndProperty Name="Empresa">
+        <ScalarProperty Name="Rut" ColumnName="Empresa_Rut" />
+      </EndProperty>
+      <EndProperty Name="Venta">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
