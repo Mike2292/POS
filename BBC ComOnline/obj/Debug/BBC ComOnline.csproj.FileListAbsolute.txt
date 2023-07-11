@@ -1,0 +1,249 @@
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.dll.config
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.pdb
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.exe
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.exe.config
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.rsp
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.exe
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.exe.config
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.rsp
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.AppContext.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Console.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.Compression.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.Pipes.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Claims.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Threading.Thread.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.ValueTuple.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XPath.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.exe
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.exe.config
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.rsp
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.SqlServer.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Helpers.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Mvc.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Razor.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Deployment.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Razor.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.SqlServer.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Razor.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Deployment.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Razor.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Helpers.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Mvc.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Razor.resources.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.resources.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Helpers.resources.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Mvc.resources.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csprojAssemblyReference.cache
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csproj.CoreCompileInputs.cache
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csproj.CopyComplete
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.pdb
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.dll.config
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.pdb
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.exe
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.exe.config
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.rsp
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.exe
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.exe.config
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.rsp
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.AppContext.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Console.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.Compression.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Claims.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.ValueTuple.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.exe
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.exe.config
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.rsp
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.SqlServer.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Helpers.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Mvc.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Razor.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Razor.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\EntityFramework.SqlServer.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Razor.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Razor.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Helpers.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\System.Web.Mvc.xml
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Razor.resources.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csproj.CopyComplete
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.pdb
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\Newtonsoft.Json.dll
+C:\Users\Usuario\source\repos\BBC ComOnline\BBC ComOnline\bin\Newtonsoft.Json.xml
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\Newtonsoft.Json.dll
+C:\Users\estef\source\repos\BBC ComOnline\BBC ComOnline\bin\Newtonsoft.Json.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.dll.config
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\BBC ComOnline.pdb
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.exe
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.exe.config
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\csc.rsp
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.exe
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.exe.config
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\csi.rsp
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.AppContext.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Collections.Immutable.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Console.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.Process.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.Compression.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.IO.Pipes.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Reflection.Metadata.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.AccessControl.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Claims.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Security.Principal.Windows.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Threading.Thread.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.ValueTuple.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XmlDocument.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XPath.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.exe
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.exe.config
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\vbc.rsp
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\VBCSCompiler.exe
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\roslyn\VBCSCompiler.exe.config
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\EntityFramework.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\EntityFramework.SqlServer.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\Microsoft.Web.Infrastructure.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\Newtonsoft.Json.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Helpers.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Mvc.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Razor.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Deployment.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Razor.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\EntityFramework.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\EntityFramework.SqlServer.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\Newtonsoft.Json.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Razor.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Deployment.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Webpages.Razor.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Helpers.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\System.Web.Mvc.xml
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Razor.resources.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.resources.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.Deployment.resources.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Webpages.Razor.resources.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Helpers.resources.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\bin\es\System.Web.Mvc.resources.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.csproj.CopyComplete
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.dll
+\\Mac\Home\Downloads\BBC ComOnline\BBC ComOnline\obj\Debug\BBC ComOnline.pdb

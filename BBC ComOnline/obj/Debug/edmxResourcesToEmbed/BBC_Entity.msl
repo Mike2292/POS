@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BBC_ComOnlineModelStoreContainer" CdmEntityContainer="BBC_ComOnlineEntities1">
+    <EntitySetMapping Name="Articuloes">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Articulo)">
+        <MappingFragment StoreEntitySet="Articuloes">
+          <ScalarProperty Name="EAN" ColumnName="EAN" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedors">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Proveedor)">
+        <MappingFragment StoreEntitySet="Proveedors">
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rubro" ColumnName="Rubro" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresas">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Empresa)">
+        <MappingFragment StoreEntitySet="Empresas">
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Rubro" ColumnName="Rubro" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articulo_Proveedor">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Articulo_Proveedor)">
+        <MappingFragment StoreEntitySet="Articulo_Proveedor">
+          <ScalarProperty Name="EAN_ID" ColumnName="EAN_ID" />
+          <ScalarProperty Name="ProveedorRut" ColumnName="ProveedorRut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa_Articulo">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Empresa_Articulo)">
+        <MappingFragment StoreEntitySet="Empresa_Articulo">
+          <ScalarProperty Name="EmpresaRut" ColumnName="EmpresaRut" />
+          <ScalarProperty Name="EAN_ID" ColumnName="EAN_ID" />
+          <ScalarProperty Name="Codigo_Interno" ColumnName="Codigo_Interno" />
+          <ScalarProperty Name="Unidad_MedidaId" ColumnName="Unidad_MedidaId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+          <ScalarProperty Name="Precio_Publico" ColumnName="Precio_Publico" />
+          <ScalarProperty Name="Precio_Costo" ColumnName="Precio_Costo" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Usuario)">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="EmpresaRut" ColumnName="EmpresaRut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personals">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Personal)">
+        <MappingFragment StoreEntitySet="Personals">
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="CargoId" ColumnName="CargoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Categoria)">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargoes">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Cargo)">
+        <MappingFragment StoreEntitySet="Cargoes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario_Personal">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Usuario_Personal)">
+        <MappingFragment StoreEntitySet="Usuario_Personal">
+          <ScalarProperty Name="PersonalRut" ColumnName="PersonalRut" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Moduloes">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Modulo)">
+        <MappingFragment StoreEntitySet="Moduloes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargo_Modulo">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Cargo_Modulo)">
+        <MappingFragment StoreEntitySet="Cargo_Modulo">
+          <ScalarProperty Name="CargoId" ColumnName="CargoId" />
+          <ScalarProperty Name="ModuloId" ColumnName="ModuloId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unidad_Medida">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Unidad_Medida)">
+        <MappingFragment StoreEntitySet="Unidad_Medida">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VentaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Venta)">
+        <MappingFragment StoreEntitySet="VentaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroOrden" ColumnName="NumeroOrden" />
+          <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+          <ScalarProperty Name="MetodoPago" ColumnName="MetodoPago" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_VentaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Detalle_Venta)">
+        <MappingFragment StoreEntitySet="Detalle_VentaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VentaId" ColumnName="VentaId" />
+          <ScalarProperty Name="ArticuloEAN" ColumnName="ArticuloEAN" />
+          <ScalarProperty Name="PrecioUnitario" ColumnName="PrecioUnitario" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_CarroSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Detalle_Carro)">
+        <MappingFragment StoreEntitySet="Detalle_CarroSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Carro_CompraId" ColumnName="Carro_CompraId" />
+          <ScalarProperty Name="ArticuloEAN" ColumnName="ArticuloEAN" />
+          <ScalarProperty Name="Descripcion_Producto" ColumnName="Descripcion_Producto" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carro_CompraSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Carro_Compra)">
+        <MappingFragment StoreEntitySet="Carro_CompraSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CajaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BBC_ComOnlineModel.Caja)">
+        <MappingFragment StoreEntitySet="CajaSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+          <ScalarProperty Name="FechaApertura" ColumnName="FechaApertura" />
+          <ScalarProperty Name="FechaCierre" ColumnName="FechaCierre" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="MontoInicial" ColumnName="MontoInicial" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PersonalUsuario_Personal" TypeName="BBC_ComOnlineModel.PersonalUsuario_Personal" StoreEntitySet="Usuario_Personal">
+      <EndProperty Name="Personal">
+        <ScalarProperty Name="Rut" ColumnName="Personal_Rut" />
+      </EndProperty>
+      <EndProperty Name="Usuario_Personal">
+        <ScalarProperty Name="PersonalRut" ColumnName="PersonalRut" />
+        <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UsuarioUsuario_Personal" TypeName="BBC_ComOnlineModel.UsuarioUsuario_Personal" StoreEntitySet="Usuario_Personal">
+      <EndProperty Name="Usuario">
+        <ScalarProperty Name="Id" ColumnName="Usuario_Id" />
+      </EndProperty>
+      <EndProperty Name="Usuario_Personal">
+        <ScalarProperty Name="PersonalRut" ColumnName="PersonalRut" />
+        <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VentaEmpresa" TypeName="BBC_ComOnlineModel.VentaEmpresa" StoreEntitySet="VentaSet">
+      <EndProperty Name="Empresa">
+        <ScalarProperty Name="Rut" ColumnName="Empresa_Rut" />
+      </EndProperty>
+      <EndProperty Name="Venta">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
