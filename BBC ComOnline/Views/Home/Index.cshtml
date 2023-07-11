@@ -1,0 +1,162 @@
+﻿@model IEnumerable<int>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+<link href="~/Content/POSHome.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div id="myModal" style="display: none;">
+    <div class="content-popup">
+        <div class="close"><a href="#" id="close"><img src="images/close.png"/></a></div>
+        <div>
+            <h2>Contenido POPUP</h2>
+            <p>Lorem Ipsum...</p>
+            <div style="float:left; width:100%;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup-overlay"></div>
+
+<div class="container-fluid" style="width:100%;height:95%;">
+    <div style="width:100%;height:100%;" class="pos layout-table">
+        <div class="row" style="height:100%;">
+            <div class="productos col-xl-7 col-lg-6 col-md-5 col-sm-4">
+                <div class="slimScrollDiv">
+                    <div class="items">
+                        <!-- Topbar Search -->
+                        <form class="d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="buscador input-group">
+                                <input type="text" class="form-control bg-light border-0 small col-xl-12 col-lg-10 col-md-10 col-sm-6" placeholder="Buscar productos"
+                                       aria-label="Search" aria-describedby="basic-addon2" style="width:650px" autofocus>
+                                <button class="btn btn-primary btnBuscar" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="trDiv"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 50%; height:100%;max-height:100%;" class="carroProductos container col-xl-5 col-lg-6 col-md-7 col-sm-8">
+                <div class="slimScrollDiv" style="height: 90%;box-sizing: border-box;">
+                    <table id="carroPOS" class="table table-striped table-condensed table-hover list-table" style="height:100px;">
+                        <thead class="fixed-table-header">
+                            <tr class="success">
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th class="satu"><i class="bi bi-trash"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody id="trDivCarro"></tbody>
+                    </table>
+                </div>
+                <div class="totalPago">
+                    <h3>Total a pagar: &nbsp;&nbsp;$<span class="Total" id="Total">0</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        ObtenerTodosProductos();
+        ObtenerCarro();
+        ConsultarCaja();
+    });
+
+    function ObtenerTodosProductos() {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'Get',
+            url: "/Home/ObtenerTodosProductos",
+            success: function (data) {
+                $("#trDiv").html('');
+                var tdContent = '';
+                for (var i = 0; i < data.length; i++) {
+                    var statuName = "";
+                    if (data[i].Estado == true) {
+                        statusName = "Active";
+                    }
+                    else {
+                        statusName = "Inactive";
+                    }
+                    tdContent += '<button type="button" class="btn btn-name btn-default btn-flat product" onclick="AgregarProducto(' + data[i].CodigoBarra + ", '" + data[i].Descripcion + "', '" + data[i].PrecioPublico + "', '1" + "'" + ');">' + data[i].Descripcion + " <hr class='interlineado'/>$" + data[i].PrecioPublico + '</button>';
+                }
+                $("#trDiv").append(tdContent);
+            },
+            error: function () {
+                alert("Error!")
+            }
+        });
+    }
+
+    function AgregarProducto(EAN, Descripcion, Precio, Cantidad) {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: {
+                EAN: EAN,
+                Descripcion: Descripcion,
+                Precio: Precio,
+                Cantidad: Cantidad
+            },
+            url: "/Home/AgregarProducto",
+            success: function (data) {
+                ObtenerCarro();
+            },
+            error: function () {
+                alert("Error!")
+            }
+        });
+    }
+
+    function ObtenerCarro() {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'GET',
+            url: "/Home/ObtenerCarro",
+            success: function (data) {
+                $("#trDivCarro").html('');
+                var tdContent = '';
+                var total = 0;
+                for (var i = 0; i < data.length; i++) {
+                    tdContent += '<tr> <td>' + data[i].Descripcion + '</td> <td>' + data[i].Precio + '</td> <td>' + data[i].Cantidad + '</td> <td>' + data[i].Precio * data[i].Cantidad + '</td> <td style="text-align:center"><i value="Delete" type="button" alt="Delete4" class="deleteIcon fa fa-trash"></i></td> </tr>';
+                    total += data[i].Precio * data[i].Cantidad;
+                }
+                $("#trDivCarro").append(tdContent);
+                $("#Total").text(total);
+            },
+            error: function () {
+                alert("Error!")
+            }
+        });
+    }
+
+    function ConsultarCaja() {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'POST',
+            url: "/Home/ConsultarCaja",
+            success: function (data) {
+                console.log(data);
+                if (data.Estado == false) {
+                    @Session["EstadoCaja"] = "Cerrada";
+                } else {
+                    @Session["EstadoCaja"] = "Abierta";
+                }
+            },
+            error: function () {
+                alert("Error!")
+            }
+        });
+    }
+</script>

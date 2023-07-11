@@ -1,0 +1,99 @@
+﻿@model Caja
+
+@{
+    ViewBag.Title = "AdministrarCaja";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+}
+<link href="~/Content/POSHome.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<h2>Administrador de Caja</h2>
+
+@using (Html.BeginForm("AperturaCaja", "Home", FormMethod.Post, new { @class = "Apertura border p-3 form user", @style = "display:none;" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row align-items-start" style="align-content:center;">
+            <div class="col-md-6">
+                @Html.Label("Ingrese efectivo para la apertura de la caja", htmlAttributes: new { @class = "control-label col" })
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    @Html.EditorFor(a => a.MontoInicial, new { htmlAttributes = new { @id = "MontoInicial", @class = "form-control", @placeholder = "", @autofocus = true } })
+                </div>
+                @Html.ValidationMessageFor(a => a.MontoInicial, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div class="form-group">
+            <div class="col-md-offset-2 col">
+                <button type="submit" class="btn btn-success">Abrir</button>
+            </div>
+        </div>
+    </div>
+}
+
+@using (Html.BeginForm("CierreCaja", "Home", FormMethod.Post, new { @class = "Cierre border p-3 form user", @style = "display:none;" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row align-items-start">
+            <div class="col-md-6">
+                @Html.Label("Cierre", htmlAttributes: new { @class = "control-label col" })
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    @Html.EditorFor(a => a.MontoInicial, new { htmlAttributes = new { @id = "MontoInicial", @class = "form-control", @placeholder = "", @autofocus = true } })
+                </div>
+                @Html.ValidationMessageFor(a => a.MontoInicial, "", new { @class = "text-danger" })
+            </div>
+            <h3>Total en Caja <span class="Total" id="Total">0</span></h3>
+        </div>
+        <br />
+        <hr />
+        <div class="form-group">
+            <div class="col-md-offset-2 col">
+                <button type="submit" class="btn btn-danger">Cerrar</button>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $(function () {
+        AperturaCierre();
+    });
+
+    function AperturaCierre() {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'POST',
+            url: "/Home/ConsultarCaja",
+            success: function (data) {
+                console.log(data.FechaApertura);
+                console.log(data.MontoInicial);
+                console.log(data.Total);
+                if (data.Estado == false) {
+                    console.log("False");
+                    $('.Cierre').hide();
+                    $('.Apertura').show();
+                } else {
+                    console.log("True");
+                    $('.Apertura').hide();
+                    $('.Cierre').show();
+                    $("#Total").text(data.Total);
+                }
+            },
+            error: function () {
+                alert("Error!")
+            }
+        });
+    }
+
+</script>

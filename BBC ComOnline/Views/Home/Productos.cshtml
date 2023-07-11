@@ -1,0 +1,205 @@
+﻿@{
+    ViewBag.Title = "Productos";
+    Layout = "~/Views/Shared/_Principal.cshtml";
+    Articulo Art = new Articulo();
+    Empresa_Articulo EArt = new Empresa_Articulo();
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<h2>Productos</h2>
+
+@using (Html.BeginForm("Productos", "Home", FormMethod.Post, new { @class = "border p-3 form user" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row align-items-start">
+            <div class="col-md-6">
+                @Html.LabelFor(a => EArt.EAN_ID, "* Código de Barra", htmlAttributes: new { @class = "control-label col" })
+             ObtenerTodosProductos   @Html.EditorFor(a => EArt.EAN_ID, new { htmlAttributes = new { @id = "EAN_ID", @class = "form-control", @placeholder = "XXXXXXXXXXXXXX", @autofocus = true, @maxlength = "13" } })
+                @Html.ValidationMessageFor(a => EArt.EAN_ID, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-3">
+                @Html.LabelFor(a => EArt.EAN_ID, "¿Tiene Código de Barra?", htmlAttributes: new { @class = "control-label col" })
+                @Html.CheckBox("IsActive", true)
+            </div>
+        </div>
+        <br />
+        <div class="row align-items-start">
+            <div class="col">
+                @Html.LabelFor(a => Art.Descripcion, "* Descripción", htmlAttributes: new { @class = "control-label col" })
+                @Html.EditorFor(a => Art.Descripcion, new { htmlAttributes = new { @id = "Descripcion", @class = "form-control", @placeholder = "Ejemplo de descripción", @maxlength = "50" } })
+                @Html.ValidationMessageFor(a => Art.Descripcion, "", new { @class = "text-danger" })
+            </div>
+            <div class="col">
+                @Html.LabelFor(a => EArt.Codigo_Interno, "Código Interno", htmlAttributes: new { @class = "control-label col" })
+                @Html.EditorFor(a => EArt.Codigo_Interno, new { htmlAttributes = new { @class = "form-control", @placeholder = "XXXXXXXXXXXXXX", @maxlength = "20" } })
+                @Html.ValidationMessageFor(a => EArt.Codigo_Interno, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+        <div class="row align-items-center">
+            <div class="col">
+                @Html.LabelFor(a => EArt.Unidad_Medida, "Unidad de Medida", htmlAttributes: new { @class = "control-label col" })
+                @Html.EditorFor(a => EArt.Unidad_MedidaId, new { htmlAttributes = new { @class = "form-control", @Type = "Text", @placeholder = "Kilogramo" } })
+                @Html.ValidationMessageFor(a => EArt.Unidad_MedidaId, "", new { @class = "text-danger" })
+            </div>
+            <div class="col">
+                @Html.LabelFor(a => EArt.CategoriaId, "Categoría", htmlAttributes: new { @class = "control-label col" })
+                @Html.EditorFor(a => EArt.CategoriaId, new { htmlAttributes = new { @class = "form-control", @Type = "Text", @placeholder = "Frutas" } })
+                @Html.ValidationMessageFor(a => EArt.CategoriaId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+        <div class="row align-items-end">
+            <div class="col">
+                @Html.LabelFor(a => EArt.Precio_Publico, "* Precio Publico", htmlAttributes: new { @class = "control-label col" })
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    @Html.EditorFor(a => EArt.Precio_Publico, new { htmlAttributes = new { @class = "form-control", @type = "Number", @min = "1", @max = "99999999", @placeholder = "9.999", @onkeyup = "format(this)", @onchange = "format(this)" } })
+                </div>
+                @Html.ValidationMessageFor(a => EArt.Precio_Publico, "", new { @class = "text-danger"})
+            </div>
+            <div class="col">
+                @Html.LabelFor(a => EArt.Precio_Costo, "* Precio Costo", htmlAttributes: new { @class = "control-label col" })
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    @Html.EditorFor(a => EArt.Precio_Costo, new { htmlAttributes = new { @class = "form-control", @type = "Number", @min = "1", @max = "99999999", @placeholder = "9.999", @onkeyup = "format(this)", @onchange = "format(this)" } })
+                </div>
+                @Html.ValidationMessageFor(a => EArt.Precio_Costo, "", new { @class = "text-danger" })
+            </div>
+            <div class="col">
+                @Html.LabelFor(a => EArt.Cantidad, "* Cantidad", htmlAttributes: new { @class = "control-label col" })
+                <div class="input-group mb-3">
+                    @Html.EditorFor(a => EArt.Cantidad, new { htmlAttributes = new { @class = "form-control", @type = "Number", @min = "1", @max = "999999", @placeholder = "100", @onkeyup = "format(this)", @onchange = "format(this)" } })
+                </div>
+                @Html.ValidationMessageFor(a => EArt.Cantidad, "", new { @class = "text-danger" })
+            </div>
+                <!--
+    <div class="col">
+        @Html.LabelFor(a => EArt.Fecha_Compra, "Fecha de Compra", htmlAttributes: new { @class = "control-label col" })
+        @Html.EditorFor(a => EArt.Fecha_Compra, new { htmlAttributes = new { @class = "form-control", @type = "Date" } })
+        @Html.ValidationMessageFor(a => EArt.Fecha_Compra, "", new { @class = "text-danger" })
+    </div>
+    -->
+            </div>
+        <br />
+        <div class="row align-items-end">
+            <div class="col">
+                @Html.LabelFor(a => EArt.IVA, htmlAttributes: new { @class = "control-label col" })
+                @Html.EditorFor(a => EArt.IVA, new { htmlAttributes = new { @class = "form-control", @Value = 19, @readonly = "readonly" } })
+                @Html.ValidationMessageFor(a => EArt.IVA, "", new { @class = "text-danger" })
+            </div>
+            <div class="col">
+                <select class="form-control" id="Estado">
+                    <option>--Select--</option>
+                    <option value="1">Activo</option>
+                    <option value="0">Inactivo</option>
+                </select>
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <div class="col-md-offset-2 col">
+                <button type="submit" class="btn btn-primary">Crear</button>
+            </div>
+        </div>
+    </div>
+}
+<br />
+<div class="col-xl-12 col-md-12 mb-12">
+    <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="form-group col-md-6">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Lista de Productos</div>
+                    </div>
+
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Codigo de Barra</th>
+                                <th>Descripción</th>
+                                <th>Estado</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trDiv"></tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        ObtenerTodosProductos();
+    });
+
+    function format(input) {
+        var num = input.value.replace(/\./g, '');
+        if (!isNaN(num)) {
+            num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
+            num = num.split('').reverse().join('').replace(/^[\.]/, '');
+            input.value = num;
+        }
+
+        else {
+            alert('Solo se permiten numeros');
+            input.value = input.value.replace(/[^\d\.]*/g, '');
+        }
+    }
+
+    $('#IsActive').click(function () {
+
+        var $this = $(this);
+        if ($this.is(':checked')) {
+            $('#EAN_ID').removeAttr("disabled");
+        } else {
+            $('#EAN_ID').attr("disabled", "disabled")
+        }
+    });
+
+    function ObtenerTodosProductos() {
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'Get',
+            url: "/Home/ObtenerTodosProductos",
+            success: function (data) {
+                $("#trDiv").html('');
+                var tdContent = '';
+                for (var i = 0; i < data.length; i++) {
+                    var statuName = "";
+                    if (data[i].Estado == true) {
+                        statusName = "Active";
+                    }
+                    else {
+                        statusName = "Inactive";
+                    }
+                    tdContent += '<tr><td>' + data[i].CodigoBarra + '</td>' + '<td>' + data[i].Descripcion + '</td>' + '<td>' + data[i].Estado + '</td>' + '<td><a href="#" onclick="Edit(' + data[i].CodigoBarra + ",'" + data[i].Descripcion +"'"+');">Edit</a></td></tr>';
+                }
+                $("#trDiv").append(tdContent);
+            },
+            error: function () {
+                alert("Error!")
+            }
+        });
+    }
+    function Editar(EAN, Descripcion) {
+        $("#EAN_ID").val(EAN);
+        $("#Descripcion").val(Descripcion);
+    }
+    function Resetear() {
+        $("#EAN_ID").val(null);
+        $("#Descripcion").val(null);
+    }
+</script>

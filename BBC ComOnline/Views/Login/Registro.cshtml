@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Registro";
+    Empresa Em = new Empresa();
+    Usuario Us = new Usuario();
+}
+<body class="bg-gradient-info">
+    <div class="col-xl-12 col-md-12 mb-12">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+
+                        @using (Html.BeginForm("Registro", "Login", FormMethod.Post, new { @class = "border p-3 form user" }))
+                        {
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Datos del Negocio</div>
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary("", new { @class = "alert alert-danger", @role = "alert" })
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(a => Em.Rut)
+                                    @Html.TextBoxFor(a => Em.Rut, new { @class = "form-control form-control-user", @id = "rutEmpresa", @maxlength = "12", @placeholder = "99999999-9" })
+                                </div>
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(a => Em.RazonSocial, "Razón Social")
+                                    @Html.TextBoxFor(a => Em.RazonSocial, new { @class = "form-control form-control-user", @maxlength = "50", @placeholder = "Ejemplo de Razon Social LTDA" })
+                                </div>
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(a => Em.Direccion, "Dirección")
+                                    @Html.TextBoxFor(a => Em.Direccion, new { @class = "form-control form-control-user", @maxlength = "100", @placeholder = "Ejemplo Dirección #56" })
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(a => Em.Rubro, "Rubro")
+                                    @Html.TextBoxFor(a => Em.Rubro, new { @class = "form-control form-control-user", @maxlength = "50", @placeholder = "Ejemplo de Rubro" })
+                                </div>
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(a => Em.Telefono, "Teléfono")
+                                    @Html.TextBoxFor(a => Em.Telefono, new { @class = "form-control form-control-user", @maxlength = "12", @placeholder = "226644553" })
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Datos del Usuario</div>
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(e => Us.Correo)
+                                    @Html.TextBoxFor(e => Us.Correo, new { @class = "form-control form-control-user", @maxlength = "100", @placeholder = "yo@ejemplo.com" })
+                                </div>
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(e => Us.Clave, "Contraseña")
+                                    @Html.PasswordFor(e => Us.Clave, new { @class = "form-control form-control-user", @maxlength = "20", @placeholder = "*************" })
+                                </div>
+                                <div class="form-group col-md-4">
+                                    @Html.LabelFor(e => Us.Clave, "Repita la Contraseña")
+                                    @Html.PasswordFor(e => Us.Clave, new { @class = "form-control form-control-user", @maxlength = "20", @placeholder = "*************" })
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Registrar</button> <span>&nbsp; &nbsp;</span> <a class="small" href="~/Login/Index">Retornar</a>
+                        }
+                        @if (ViewBag.Alert != null)
+                        {
+                            <script>
+                                alert("@ViewBag.Alert");
+                            </script>
+                        }
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
